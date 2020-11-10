@@ -1,0 +1,137 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>샐로디 회원가입</title>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/Salody_Join.js"></script>
+<link rel="stylesheet" href="css/Salody_Join.css">
+</head>
+<body>
+
+<%@include file="Salody_Main.jsp" %>
+
+
+<div id="join">
+<h1>회원가입 </h1>
+<br><br>
+<hr color="black">
+<br><br><br><br>
+<h3>기본정보</h3>
+<h5 style="margin-left: 900px "><span style="color: red">*</span>필수입력사항</h5>
+<table id="info" >
+  <tr>
+    <td class="sub">아이디<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<input type="text" id="id">
+    <button>중복확인</button>
+    <br><h6 id="ID" style="margin-left: 15px">아이디를 입력해주세요</h6>
+    </td>
+  </tr>
+  <tr>
+    <td class="sub">비밀번호<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<input type="password"></td>
+  </tr>
+  <tr>
+    <td class="sub">비밀번호 확인<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<input type="password"></td>
+  </tr>
+  <tr>
+    <td class="sub">비밀번호 확인 질문<span>*</span></td>
+    	<td class="in">&nbsp;&nbsp;<select>
+    		<option>-----선택해주세요-----</option>
+    		<option>태어난 곳은?</option>
+    		<option>첫사랑 이름은?</option>
+    		<option>기억에 남는 선생님 성함은?</option>
+    		<option>어머니의 고향은?</option>
+    		<option>처음으로 배웠던 운동은?</option>
+    		<option>가장 좋아하는 노래는?</option>
+    	</select>
+    </td>
+  </tr>
+  <tr>
+    <td class="sub">비밀번호 확인 답변<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<input type="text"></td>
+  </tr>
+  <tr>
+    <td class="sub">이름<span>*</span></td>
+    <td>&nbsp;&nbsp;<input type="text"></td>
+  </tr>
+  <tr style="height: 100px;">
+    <td class="sub">주소<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<input type="text" style="width: 70px;">&nbsp;<button>우편번호</button>
+   	<br>&nbsp;&nbsp;<input type="text" style="width: 200px;">
+    <br>&nbsp;&nbsp;<input type="text" style="width: 200px;">
+    
+    </td>
+  </tr>
+  <tr>
+    <td class="sub">휴대전화<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<select name="phone">
+    	<option>010</option>
+    	<option>011</option>
+    	<option>017</option>
+    	<option>016</option>
+    	<option>018</option>
+    	<option>070</option>
+    	</select>-
+    	<input type="text" style="width: 50px" name="phone">-
+    	<input type="text" style="width: 50px" name="phone"></td>
+  </tr>
+  <tr style="height: 65px;">
+    <td class="sub">이메일<span>*</span></td>
+    <td class="in">&nbsp;&nbsp;<input type="text" style="width: 70px">@
+    	<input type="text" placeholder="직접입력" style="width: 100px" >
+    	<br>
+    	&nbsp;&nbsp;<select>
+    	<option>naver.com</option>
+    	<option>daum.net</option>
+    	<option>gmail.com</option>
+    	<option>hanmail.net</option>
+    	<option>yahoo.com</option>
+    	<option>nate.com</option>
+    	<option>hotmail.com</option>
+    	</select>
+    	</td>
+  </tr>
+</table>  
+  <br><br><br><br>
+<h3>추가정보</h3>
+<br>
+<table id="info2">
+	<tr>
+		<td class="sub">성별</td>
+		<td class="in">&nbsp;&nbsp;<input type="radio" value="mm" name="ge">남자
+						<input type="radio" value="ff" name="ge">여자
+		</td>
+	</tr>
+	<tr>
+	<td class="sub">생년월일</td>
+	<td class="in">&nbsp;&nbsp;<input type="text" style="width: 50px;">년
+					<input type="text" style="width: 30px">월
+					<input type="text" style="width: 30px">일
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" value="yy" name="bir">양력
+					<input type="radio" value="uu" name="bir">음력
+	</td>
+	</tr>
+</table>
+
+
+<div id="submitB">
+<input class="bu" type="submit" value="회원가입">
+<input class="bu" type="reset" value="초기화">
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+
+</div>
+
+
+<%@include file="Salody_Footer.jsp" %>
+
+
+</body>
+</html>
